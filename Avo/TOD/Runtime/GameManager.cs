@@ -55,7 +55,6 @@ namespace Avo.TOD.Runtime
         #region Truth
         public void Truth()
         {
-            Debug.LogError("Truth On GameManager");
             Networking.SetOwner(_player, gameObject);
             _playerID = _player.playerId;
 
@@ -84,7 +83,6 @@ namespace Avo.TOD.Runtime
         #region Dare
         public void Dare()
         {
-            Debug.LogError("Dare On GameManager");
             Networking.SetOwner(_player, gameObject);
             _playerID = _player.playerId;
 
@@ -163,11 +161,7 @@ namespace Avo.TOD.Runtime
             playerDisplayedText.text = VRCPlayerApi.GetPlayerById(_playerID).displayName;
             questionDisplayedText.text = _question;
         }
-
-        public override void OnPlayerJoined(VRCPlayerApi player)
-        {
-            RequestSerialization();
-        }
+        
         #endregion Update Question and Serialization
     }
 }

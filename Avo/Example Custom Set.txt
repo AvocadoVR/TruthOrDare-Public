@@ -1,0 +1,10 @@
+{
+    "DeckName": "",
+
+    "DeckBy": "",
+
+    "Truths": [],
+    "Player_Truths": [],
+    "Dares": [],
+    "Player_Dares": []
+}
